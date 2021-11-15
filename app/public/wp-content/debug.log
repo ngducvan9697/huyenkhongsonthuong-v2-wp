@@ -14,3 +14,18 @@
 [14-Nov-2021 14:13:05 UTC] PHP  11. wpdb->db_connect() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\wp-db.php:632
 [14-Nov-2021 14:13:05 UTC] PHP  12. mysqli_real_connect() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\wp-db.php:1653
 [14-Nov-2021 15:03:38 UTC] PHP Parse error:  syntax error, unexpected '}' in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\themes\hkstv2\functions.php on line 12
+[15-Nov-2021 06:40:37 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\Users\ndvan\Local Sites\mywppage\app\public\wp-includes\wp-db.php on line 1653
+[15-Nov-2021 06:40:37 UTC] PHP Stack trace:
+[15-Nov-2021 06:40:37 UTC] PHP   1. {main}() C:\Program Files (x86)\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[15-Nov-2021 06:40:37 UTC] PHP   2. include() C:\Program Files (x86)\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[15-Nov-2021 06:40:37 UTC] PHP   3. include() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[15-Nov-2021 06:40:37 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[15-Nov-2021 06:40:37 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:77
+[15-Nov-2021 06:40:37 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[15-Nov-2021 06:40:37 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1192
+[15-Nov-2021 06:40:37 UTC] PHP   8. require() phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1271
+[15-Nov-2021 06:40:37 UTC] PHP   9. require_wp_db() C:\Users\ndvan\Local Sites\mywppage\app\public\wp-settings.php:124
+[15-Nov-2021 06:40:37 UTC] PHP  10. wpdb->__construct() C:\Users\ndvan\Local Sites\mywppage\app\public\wp-includes\load.php:558
+[15-Nov-2021 06:40:37 UTC] PHP  11. wpdb->db_connect() C:\Users\ndvan\Local Sites\mywppage\app\public\wp-includes\wp-db.php:632
+[15-Nov-2021 06:40:37 UTC] PHP  12. mysqli_real_connect() C:\Users\ndvan\Local Sites\mywppage\app\public\wp-includes\wp-db.php:1653
