@@ -1,0 +1,1 @@
+[13-Nov-2021 07:29:54 UTC] PHP Parse error:  syntax error, unexpected 'wp_enqueue_style' (T_STRING), expecting ',' or ';' in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\themes\hkstv2\header.php on line 31
