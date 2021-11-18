@@ -285,7 +285,7 @@ a {
 
   border-radius: 2.5px;
   background-color: rgba(67, 195, 218, 0.9);
-  background-image: url("assets/symbols/triagle.svg");
+  background-image: url("../symbols/triagle.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -690,7 +690,7 @@ div.author-box {
               padding-left: 6px;
               -webkit-transition: color 200ms ease;
               transition: color 200ms ease;
-              opacity: 0.8;
+              // opacity: 0.8;
               cursor: pointer;
 
               &:not(.menu-item-has-children) {
@@ -728,7 +728,7 @@ div.author-box {
                 outline-offset: 15px;
 
                 &:hover {
-                  transform: translateY(-3px);
+                  // transform: translateY(-3px);
                   & div {
                     transition: outline-color 0.3s ease;
                     outline-color: $primary-color;
@@ -742,14 +742,14 @@ div.author-box {
                   top: 0;
                   margin-top: 80px;
                   max-width: 1280px;
-                  min-width: 100%;
+                  min-width: 100vw;
                   display: grid;
                   grid-template-columns: 1fr 1fr 1fr;
                   grid-auto-rows: 1fr;
                   background-color: transparent;
                   grid-gap: 7px;
                   // transform: translateY(-100%);
-                  max-height: 0;
+                  // max-height: 0;
                   transition: max-height 0.3s ease !important;
 
                   & > .menu-item {
@@ -777,26 +777,32 @@ div.author-box {
                         color: #1b222c;
                         font-size: 19px;
                         font-weight: 400;
+                        padding-left: 0;
 
                         &:after {
                           content: "";
                           position: absolute;
-                          background: url("assets/symbols/external-link.svg")
+                          mask-image: url(../symbols/external-link.svg)
                             no-repeat;
+                          -webkit-mask: url(../symbols/external-link.svg)
+                            no-repeat;
+                          -webkit-mask-size: 13px 13px;
+                          mask-size: 13px 13px;
+                          top: 2px;
                           width: 13px;
                           height: 13px;
-                          background-size: 13px 13px;
+                          background-color: $primary-color;
                         }
                       }
                     }
 
                     & > .sub-menu {
-                      display: flex;
                       justify-content: flex-start;
                       flex-wrap: wrap;
                       align-items: center;
 
                       & > .menu-item {
+                        display: inline-block;
                         a {
                           font-size: 1.25rem;
                           color: chocolate;
@@ -862,106 +868,106 @@ div.author-box {
               //   max-width: 1280px;
               //   min-width: 100%;
 
-              .category-dropdown-container {
-                .expand-align-center {
-                  // overflow: hidden;
-                  .intro-categories {
-                    & > div:first-child {
-                      // display: grid;
-                      // grid-template-columns: 1fr 1fr 1fr;
-                      // grid-auto-rows: 1fr;
-                      // background-color: transparent;
-                      // grid-gap: 7px;
-                      // // transform: translateY(-100%);
-                      // max-height: 0;
-                      // transition: max-height 0.3s ease !important;
+              // .category-dropdown-container {
+              //   .expand-align-center {
+              //     // overflow: hidden;
+              //     .intro-categories {
+              //       & > div:first-child {
+              //         // display: grid;
+              //         // grid-template-columns: 1fr 1fr 1fr;
+              //         // grid-auto-rows: 1fr;
+              //         // background-color: transparent;
+              //         // grid-gap: 7px;
+              //         // // transform: translateY(-100%);
+              //         // max-height: 0;
+              //         // transition: max-height 0.3s ease !important;
 
-                      .intro-category-item {
-                        // height: 100%;
-                        // display: flex;
-                        // padding: 5px 13px 5px 15px;
-                        // align-items: center;
-                        // background-color: antiquewhite;
-                        // min-height: 90px;
+              //         .intro-category-item {
+              //           // height: 100%;
+              //           // display: flex;
+              //           // padding: 5px 13px 5px 15px;
+              //           // align-items: center;
+              //           // background-color: antiquewhite;
+              //           // min-height: 90px;
 
-                        .circular-link-block {
-                          position: relative;
-                          overflow: hidden;
-                          margin-right: 15px;
-                          width: 65px;
-                          height: 65px;
-                          border-radius: 50%;
-                          opacity: 0;
-                          // transform: scale(0) !important;
-                          transition: opacity 0.3s ease;
+              //           // .circular-link-block {
+              //           //   position: relative;
+              //           //   overflow: hidden;
+              //           //   margin-right: 15px;
+              //           //   width: 65px;
+              //           //   height: 65px;
+              //           //   border-radius: 50%;
+              //           //   opacity: 0;
+              //           //   // transform: scale(0) !important;
+              //           //   transition: opacity 0.3s ease;
 
-                          img {
-                          }
-                        }
+              //           //   img {
+              //           //   }
+              //           // }
 
-                        .expand-flex {
-                          display: flex;
-                          align-items: flex-start;
-                          height: 100%;
-                          flex: 1;
-                          opacity: 0;
-                          // transform: scale(0) !important;
-                          transition: opacity 0.3s ease;
-                          & > div:first-child {
-                            .flex {
-                              display: flex;
-                              justify-content: flex-start;
-                              flex-wrap: wrap;
-                              align-items: center;
+              //           .expand-flex {
+              //             display: flex;
+              //             align-items: flex-start;
+              //             height: 100%;
+              //             flex: 1;
+              //             opacity: 0;
+              //             // transform: scale(0) !important;
+              //             transition: opacity 0.3s ease;
+              //             & > div:first-child {
+              //               .flex {
+              //                 display: flex;
+              //                 justify-content: flex-start;
+              //                 flex-wrap: wrap;
+              //                 align-items: center;
 
-                              .category-medium-link {
-                                transition: color 200ms ease;
-                                color: #1b222c;
-                                font-size: 19px;
-                                font-weight: 400;
+              //                 .category-medium-link {
+              //                   transition: color 200ms ease;
+              //                   color: #1b222c;
+              //                   font-size: 19px;
+              //                   font-weight: 400;
 
-                                &:hover {
-                                  color: #f19361;
-                                }
-                              }
+              //                   &:hover {
+              //                     color: #f19361;
+              //                   }
+              //                 }
 
-                              .external-link {
-                                color: #f19361;
-                                position: relative;
-                                margin-left: 5px;
+              //                 .external-link {
+              //                   color: #f19361;
+              //                   position: relative;
+              //                   margin-left: 5px;
 
-                                i {
-                                  font-size: $smaill-icon-font-size;
-                                  font-weight: 100;
-                                }
-                              }
-                            }
+              //                   i {
+              //                     font-size: $smaill-icon-font-size;
+              //                     font-weight: 100;
+              //                   }
+              //                 }
+              //               }
 
-                            .intro-category-subtitle {
-                              ul {
-                                li {
-                                  display: inline;
-                                  a {
-                                    font-size: $smaill-icon-font-size;
-                                    color: chocolate;
-                                    font-weight: 600;
-                                    margin-right: 1.5rem;
-                                    transition: color 200ms ease;
+              //               .intro-category-subtitle {
+              //                 ul {
+              //                   li {
+              //                     display: inline;
+              //                     a {
+              //                       font-size: $smaill-icon-font-size;
+              //                       color: chocolate;
+              //                       font-weight: 600;
+              //                       margin-right: 1.5rem;
+              //                       transition: color 200ms ease;
 
-                                    &:hover {
-                                      color: $black-color;
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
+              //                       &:hover {
+              //                         color: $black-color;
+              //                       }
+              //                     }
+              //                   }
+              //                 }
+              //               }
+              //             }
+              //           }
+              //         }
+              //       }
+              //     }
+              //   }
+              // }
             }
           }
           .right-nav-menu {
@@ -1050,7 +1056,7 @@ div.author-box {
           width: 50%;
 
           &.left {
-            background-image: url("assets/images/gallery1.png");
+            background-image: url("../images/gallery1.png");
             background-position: 50% 50%;
             background-size: cover;
             background-repeat: no-repeat;
