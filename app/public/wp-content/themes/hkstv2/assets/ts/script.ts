@@ -9,13 +9,16 @@ setTimeout(() => {
 function attachToggleClassForElement(
   objectAttach: string,
   objectDestination: string,
-  affectClass: string
+  affectClass: string,
+  isTriggerParrent?: boolean
 ) {
   let element: HTMLElement = document.querySelector(objectAttach)!;
 
   if (element) {
     element.addEventListener("click", () => {
-      let destination: HTMLElement = document.querySelector(objectDestination)!;
+      let destination: HTMLElement = isTriggerParrent
+        ? element.parentElement!
+        : document.querySelector(objectDestination)!;
 
       if (destination) {
         destination.classList.toggle(affectClass);
@@ -25,7 +28,7 @@ function attachToggleClassForElement(
 }
 
 attachToggleClassForElement(".menu-btn", ".navbar", "show");
-attachToggleClassForElement(".category-toogle", ".category-dropdown", "show");
+attachToggleClassForElement(".menu-item-has-children a", "", "show", true);
 
 attachToggleClassForElement(".mail-icon", ".newsletter-container", "show");
 attachToggleClassForElement(

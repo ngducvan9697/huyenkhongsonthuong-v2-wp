@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "sass assets/sass/style.scss  assets/css/style.css -w",
+    "tsc": "tsc assets/ts/script.ts  assets/js/script.js -w"
   },
   "author": "",
   "license": "ISC",
