@@ -5,11 +5,13 @@ setTimeout(function () {
         preloader.classList.add("close");
     }
 }, 500);
-function attachToggleClassForElement(objectAttach, objectDestination, affectClass) {
+function attachToggleClassForElement(objectAttach, objectDestination, affectClass, isTriggerParrent) {
     var element = document.querySelector(objectAttach);
     if (element) {
         element.addEventListener("click", function () {
-            var destination = document.querySelector(objectDestination);
+            var destination = isTriggerParrent
+                ? element.parentElement
+                : document.querySelector(objectDestination);
             if (destination) {
                 destination.classList.toggle(affectClass);
             }
@@ -17,7 +19,7 @@ function attachToggleClassForElement(objectAttach, objectDestination, affectClas
     }
 }
 attachToggleClassForElement(".menu-btn", ".navbar", "show");
-attachToggleClassForElement(".category-toogle", ".category-dropdown", "show");
+attachToggleClassForElement(".menu-item-has-children a", "", "show", true);
 attachToggleClassForElement(".mail-icon", ".newsletter-container", "show");
 attachToggleClassForElement(".newsletter-container .close-element", ".newsletter-container", "show");
 attachToggleClassForElement(".close-contact-form", ".newsletter-container", "show");
