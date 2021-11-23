@@ -47,25 +47,29 @@
       <div class="navbar">
         <div class="navbar-content-wrapper">
           <a href="/" class="brand" aria-label="home">
-            <img src="<?php echo get_template_directory_uri() ?>./assets/images/logo.png" alt="" class="logo" />
-            <img src="<?php echo get_template_directory_uri() ?>./assets/images/logo-text.png" alt="" class="logo" />
+            <?php
+            if (function_exists('the_custom_logo')) {
+              $custom_logo_id = get_theme_mod('custom_logo');
+              $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
+              echo '<img src="' . esc_url($logo[0]) . '" alt="" class=" logo" />';
+            }
+            ?>
+
           </a>
           <nav class="nav-menu">
             <?php
             wp_nav_menu(array(
               'menu_class'        => "left-nav-menu", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
               'theme_location'    => "primary_header_left", // (string) Theme location to be used. Must be registered with register_nav_menu() in order to be selectable by the user.
-              'container'            => ''
+              'container'         => ''
+            ));
+
+            wp_nav_menu(array(
+              'menu_class'        => "right-nav-menu",
+              'theme_location'    => "primary_header_right",
+              'container'          => ''
             ));
             ?>
-            <div class="right-nav-menu">
-              <a href="" class="nav-link">
-                <div>Giới thiệu</div>
-              </a>
-              <a href="" class="nav-link">
-                <div>Liên hệ</div>
-              </a>
-            </div>
           </nav>
           <div class="nav-container">
             <div class="nav-flex">
