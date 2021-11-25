@@ -17189,3 +17189,45 @@ Stack trace:
 [16-Nov-2021 07:27:52 UTC] PHP  11. Custom_Nav_Walker->walk() C:\Users\ndvan\Local Sites\mywppage\app\public\wp-includes\nav-menu-template.php:608
 [16-Nov-2021 07:27:52 UTC] PHP  12. Custom_Nav_Walker->display_element() C:\Users\ndvan\Local Sites\mywppage\app\public\wp-includes\class-wp-walker.php:244
 [16-Nov-2021 07:27:52 UTC] PHP  13. Custom_Nav_Walker->start_el() C:\Users\ndvan\Local Sites\mywppage\app\public\wp-includes\class-wp-walker.php:144
+[20-Nov-2021 13:55:04 UTC] PHP Parse error:  syntax error, unexpected '}' in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\themes\hkstv2\functions.php on line 8
+[20-Nov-2021 14:17:11 UTC] PHP Notice:  Undefined variable: logo in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\themes\hkstv2\header.php on line 59
+[20-Nov-2021 14:17:11 UTC] PHP Stack trace:
+[20-Nov-2021 14:17:11 UTC] PHP   1. {main}() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\index.php:0
+[20-Nov-2021 14:17:11 UTC] PHP   2. require() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\index.php:17
+[20-Nov-2021 14:17:11 UTC] PHP   3. require_once() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-blog-header.php:19
+[20-Nov-2021 14:17:11 UTC] PHP   4. include() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\template-loader.php:106
+[20-Nov-2021 14:17:11 UTC] PHP   5. get_header() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\themes\hkstv2\index.php:2
+[20-Nov-2021 14:17:11 UTC] PHP   6. locate_template() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\general-template.php:48
+[20-Nov-2021 14:17:11 UTC] PHP   7. load_template() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\template.php:716
+[20-Nov-2021 14:17:11 UTC] PHP   8. require_once() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\template.php:770
+[21-Nov-2021 04:39:08 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.
+ in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\wp-db.php on line 1653
+[21-Nov-2021 04:39:08 UTC] PHP Stack trace:
+[21-Nov-2021 04:39:08 UTC] PHP   1. {main}() C:\Users\ducva\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[21-Nov-2021 04:39:08 UTC] PHP   2. include() C:\Users\ducva\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[21-Nov-2021 04:39:08 UTC] PHP   3. include() phar://C:/Users/ducva/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[21-Nov-2021 04:39:08 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Users/ducva/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[21-Nov-2021 04:39:08 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Users/ducva/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:77
+[21-Nov-2021 04:39:08 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Users/ducva/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[21-Nov-2021 04:39:08 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar://C:/Users/ducva/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1192
+[21-Nov-2021 04:39:08 UTC] PHP   8. require() phar://C:/Users/ducva/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1271
+[21-Nov-2021 04:39:08 UTC] PHP   9. require_wp_db() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-settings.php:124
+[21-Nov-2021 04:39:08 UTC] PHP  10. wpdb->__construct() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\load.php:558
+[21-Nov-2021 04:39:08 UTC] PHP  11. wpdb->db_connect() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\wp-db.php:632
+[21-Nov-2021 04:39:08 UTC] PHP  12. mysqli_real_connect() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\wp-db.php:1653
+[21-Nov-2021 04:39:14 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\update.php on line 413
+[21-Nov-2021 04:39:14 UTC] PHP Stack trace:
+[21-Nov-2021 04:39:14 UTC] PHP   1. {main}() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-cron.php:0
+[21-Nov-2021 04:39:14 UTC] PHP   2. do_action_ref_array() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-cron.php:138
+[21-Nov-2021 04:39:14 UTC] PHP   3. WP_Hook->do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\plugin.php:518
+[21-Nov-2021 04:39:14 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:327
+[21-Nov-2021 04:39:14 UTC] PHP   5. wp_update_plugins() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:303
+[21-Nov-2021 04:39:14 UTC] PHP   6. trigger_error() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\update.php:413
+[21-Nov-2021 04:39:14 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\update.php on line 693
+[21-Nov-2021 04:39:14 UTC] PHP Stack trace:
+[21-Nov-2021 04:39:14 UTC] PHP   1. {main}() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-cron.php:0
+[21-Nov-2021 04:39:14 UTC] PHP   2. do_action_ref_array() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-cron.php:138
+[21-Nov-2021 04:39:14 UTC] PHP   3. WP_Hook->do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\plugin.php:518
+[21-Nov-2021 04:39:14 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:327
+[21-Nov-2021 04:39:14 UTC] PHP   5. wp_update_themes() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:303
+[21-Nov-2021 04:39:14 UTC] PHP   6. trigger_error() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\update.php:693
