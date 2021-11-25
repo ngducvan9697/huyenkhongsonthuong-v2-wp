@@ -1,1 +1,19 @@
 [13-Nov-2021 07:29:54 UTC] PHP Parse error:  syntax error, unexpected 'wp_enqueue_style' (T_STRING), expecting ',' or ';' in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\themes\hkstv2\header.php on line 31
+[20-Nov-2021 16:27:26 UTC] PHP Warning:  Use of undefined constant ABSPATH - assumed 'ABSPATH' (this will throw an Error in a future version of PHP) in C:\Users\ndvan\Local Sites\mywppage\app\public\wp-settings.php on line 33
+[20-Nov-2021 16:27:26 UTC] PHP Stack trace:
+[20-Nov-2021 16:27:26 UTC] PHP   1. {main}() C:\Users\ndvan\Local Sites\mywppage\app\public\wp-settings.php:0
+[20-Nov-2021 16:27:26 UTC] PHP Warning:  require(ABSPATHwp-includes/version.php): failed to open stream: No such file or directory in C:\Users\ndvan\Local Sites\mywppage\app\public\wp-settings.php on line 33
+[20-Nov-2021 16:27:26 UTC] PHP Stack trace:
+[20-Nov-2021 16:27:26 UTC] PHP   1. {main}() C:\Users\ndvan\Local Sites\mywppage\app\public\wp-settings.php:0
+[20-Nov-2021 16:27:26 UTC] PHP Fatal error:  require(): Failed opening required 'ABSPATHwp-includes/version.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\ndvan\Local Sites\mywppage\app\public\wp-settings.php on line 33
+[20-Nov-2021 16:27:26 UTC] PHP Stack trace:
+[20-Nov-2021 16:27:26 UTC] PHP   1. {main}() C:\Users\ndvan\Local Sites\mywppage\app\public\wp-settings.php:0
+[20-Nov-2021 16:27:29 UTC] PHP Warning:  Use of undefined constant ABSPATH - assumed 'ABSPATH' (this will throw an Error in a future version of PHP) in C:\Users\ndvan\Local Sites\mywppage\app\public\wp-settings.php on line 33
+[20-Nov-2021 16:27:29 UTC] PHP Stack trace:
+[20-Nov-2021 16:27:29 UTC] PHP   1. {main}() C:\Users\ndvan\Local Sites\mywppage\app\public\wp-settings.php:0
+[20-Nov-2021 16:27:29 UTC] PHP Warning:  require(ABSPATHwp-includes/version.php): failed to open stream: No such file or directory in C:\Users\ndvan\Local Sites\mywppage\app\public\wp-settings.php on line 33
+[20-Nov-2021 16:27:29 UTC] PHP Stack trace:
+[20-Nov-2021 16:27:29 UTC] PHP   1. {main}() C:\Users\ndvan\Local Sites\mywppage\app\public\wp-settings.php:0
+[20-Nov-2021 16:27:29 UTC] PHP Fatal error:  require(): Failed opening required 'ABSPATHwp-includes/version.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\ndvan\Local Sites\mywppage\app\public\wp-settings.php on line 33
+[20-Nov-2021 16:27:29 UTC] PHP Stack trace:
+[20-Nov-2021 16:27:29 UTC] PHP   1. {main}() C:\Users\ndvan\Local Sites\mywppage\app\public\wp-settings.php:0
