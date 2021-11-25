@@ -20498,3 +20498,147 @@ Stack trace:
 [25-Nov-2021 09:19:10 UTC] PHP   7. wpdb->__construct() C:\Users\ndvan\Local Sites\mywppage\app\public\wp-includes\load.php:558
 [25-Nov-2021 09:19:10 UTC] PHP   8. wpdb->db_connect() C:\Users\ndvan\Local Sites\mywppage\app\public\wp-includes\wp-db.php:632
 [25-Nov-2021 09:19:10 UTC] PHP   9. mysqli_real_connect() C:\Users\ndvan\Local Sites\mywppage\app\public\wp-includes\wp-db.php:1653
+[25-Nov-2021 14:51:23 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'thachpham_thongtin_output' not found or invalid function name in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\includes\template.php on line 1395
+[25-Nov-2021 14:51:23 UTC] PHP Stack trace:
+[25-Nov-2021 14:51:23 UTC] PHP   1. {main}() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:0
+[25-Nov-2021 14:51:23 UTC] PHP   2. require() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:75
+[25-Nov-2021 14:51:23 UTC] PHP   3. do_meta_boxes() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\edit-form-advanced.php:711
+[25-Nov-2021 15:08:16 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\plugins\hkst-metabox.php:27
+Stack trace:
+#0 C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php(305): hkst_thongtin_save(140)
+#1 C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#2 C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#3 C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\post.php(4468): do_action('save_post', 140, Object(WP_Post), false)
+#4 C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\includes\post.php(694): wp_insert_post(Array, false, false)
+#5 C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php(66): get_default_post_to_edit('post', true)
+#6 {main}
+  thrown in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\plugins\hkst-metabox.php on line 27
+[25-Nov-2021 15:08:23 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\plugins\hkst-metabox.php:27
+Stack trace:
+#0 C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php(305): hkst_thongtin_save(141)
+#1 C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#2 C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#3 C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\post.php(4468): do_action('save_post', 141, Object(WP_Post), false)
+#4 C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\includes\post.php(694): wp_insert_post(Array, false, false)
+#5 C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php(66): get_default_post_to_edit('post', true)
+#6 {main}
+  thrown in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\plugins\hkst-metabox.php on line 27
+[25-Nov-2021 15:08:25 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\plugins\hkst-metabox.php:27
+Stack trace:
+#0 C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php(305): hkst_thongtin_save(142)
+#1 C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#2 C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#3 C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\post.php(4468): do_action('save_post', 142, Object(WP_Post), false)
+#4 C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\includes\post.php(694): wp_insert_post(Array, false, false)
+#5 C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php(66): get_default_post_to_edit('post', true)
+#6 {main}
+  thrown in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\plugins\hkst-metabox.php on line 27
+[25-Nov-2021 15:09:11 UTC] PHP Notice:  Undefined index: show_on_main_slider in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\plugins\hkst-metabox.php on line 27
+[25-Nov-2021 15:09:11 UTC] PHP Stack trace:
+[25-Nov-2021 15:09:11 UTC] PHP   1. {main}() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:0
+[25-Nov-2021 15:09:11 UTC] PHP   2. get_default_post_to_edit() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:66
+[25-Nov-2021 15:09:11 UTC] PHP   3. wp_insert_post() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\includes\post.php:694
+[25-Nov-2021 15:09:11 UTC] PHP   4. do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\post.php:4468
+[25-Nov-2021 15:09:11 UTC] PHP   5. WP_Hook->do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\plugin.php:470
+[25-Nov-2021 15:09:11 UTC] PHP   6. WP_Hook->apply_filters() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:327
+[25-Nov-2021 15:09:11 UTC] PHP   7. hkst_thongtin_save() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:305
+[25-Nov-2021 15:09:40 UTC] PHP Notice:  Undefined index: show_on_main_slider in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\plugins\hkst-metabox.php on line 26
+[25-Nov-2021 15:09:40 UTC] PHP Stack trace:
+[25-Nov-2021 15:09:40 UTC] PHP   1. {main}() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:0
+[25-Nov-2021 15:09:40 UTC] PHP   2. get_default_post_to_edit() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:66
+[25-Nov-2021 15:09:40 UTC] PHP   3. wp_insert_post() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\includes\post.php:694
+[25-Nov-2021 15:09:40 UTC] PHP   4. do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\post.php:4468
+[25-Nov-2021 15:09:40 UTC] PHP   5. WP_Hook->do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\plugin.php:470
+[25-Nov-2021 15:09:40 UTC] PHP   6. WP_Hook->apply_filters() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:327
+[25-Nov-2021 15:09:40 UTC] PHP   7. hkst_thongtin_save() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:305
+[25-Nov-2021 15:13:21 UTC] PHP Notice:  Undefined index: show_on_main_slider in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\plugins\hkst-metabox.php on line 29
+[25-Nov-2021 15:13:21 UTC] PHP Stack trace:
+[25-Nov-2021 15:13:21 UTC] PHP   1. {main}() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:0
+[25-Nov-2021 15:13:21 UTC] PHP   2. get_default_post_to_edit() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:66
+[25-Nov-2021 15:13:21 UTC] PHP   3. wp_insert_post() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\includes\post.php:694
+[25-Nov-2021 15:13:21 UTC] PHP   4. do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\post.php:4468
+[25-Nov-2021 15:13:21 UTC] PHP   5. WP_Hook->do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\plugin.php:470
+[25-Nov-2021 15:13:21 UTC] PHP   6. WP_Hook->apply_filters() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:327
+[25-Nov-2021 15:13:21 UTC] PHP   7. hkst_thongtin_save() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:305
+[25-Nov-2021 15:14:19 UTC] PHP Notice:  Undefined index: show_on_main_slider in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\plugins\hkst-metabox.php on line 29
+[25-Nov-2021 15:14:19 UTC] PHP Stack trace:
+[25-Nov-2021 15:14:19 UTC] PHP   1. {main}() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:0
+[25-Nov-2021 15:14:19 UTC] PHP   2. get_default_post_to_edit() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:66
+[25-Nov-2021 15:14:19 UTC] PHP   3. wp_insert_post() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\includes\post.php:694
+[25-Nov-2021 15:14:19 UTC] PHP   4. do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\post.php:4468
+[25-Nov-2021 15:14:19 UTC] PHP   5. WP_Hook->do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\plugin.php:470
+[25-Nov-2021 15:14:19 UTC] PHP   6. WP_Hook->apply_filters() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:327
+[25-Nov-2021 15:14:19 UTC] PHP   7. hkst_thongtin_save() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:305
+[25-Nov-2021 15:15:54 UTC] PHP Notice:  Undefined index: show_on_main_slider in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\plugins\hkst-metabox.php on line 29
+[25-Nov-2021 15:15:54 UTC] PHP Stack trace:
+[25-Nov-2021 15:15:54 UTC] PHP   1. {main}() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:0
+[25-Nov-2021 15:15:54 UTC] PHP   2. get_default_post_to_edit() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:66
+[25-Nov-2021 15:15:54 UTC] PHP   3. wp_insert_post() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\includes\post.php:694
+[25-Nov-2021 15:15:54 UTC] PHP   4. do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\post.php:4468
+[25-Nov-2021 15:15:54 UTC] PHP   5. WP_Hook->do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\plugin.php:470
+[25-Nov-2021 15:15:54 UTC] PHP   6. WP_Hook->apply_filters() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:327
+[25-Nov-2021 15:15:54 UTC] PHP   7. hkst_thongtin_save() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:305
+[25-Nov-2021 15:20:02 UTC] PHP Notice:  Undefined index: show_on_main_slider in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\plugins\hkst-metabox.php on line 29
+[25-Nov-2021 15:20:02 UTC] PHP Stack trace:
+[25-Nov-2021 15:20:02 UTC] PHP   1. {main}() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:0
+[25-Nov-2021 15:20:02 UTC] PHP   2. get_default_post_to_edit() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:66
+[25-Nov-2021 15:20:02 UTC] PHP   3. wp_insert_post() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\includes\post.php:694
+[25-Nov-2021 15:20:02 UTC] PHP   4. do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\post.php:4468
+[25-Nov-2021 15:20:02 UTC] PHP   5. WP_Hook->do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\plugin.php:470
+[25-Nov-2021 15:20:02 UTC] PHP   6. WP_Hook->apply_filters() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:327
+[25-Nov-2021 15:20:02 UTC] PHP   7. hkst_thongtin_save() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:305
+[25-Nov-2021 15:22:36 UTC] PHP Notice:  Undefined index: show_on_main_slider in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\plugins\hkst-metabox.php on line 26
+[25-Nov-2021 15:22:36 UTC] PHP Stack trace:
+[25-Nov-2021 15:22:36 UTC] PHP   1. {main}() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post.php:0
+[25-Nov-2021 15:22:36 UTC] PHP   2. edit_post() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post.php:227
+[25-Nov-2021 15:22:36 UTC] PHP   3. wp_update_post() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\includes\post.php:423
+[25-Nov-2021 15:22:36 UTC] PHP   4. wp_insert_post() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\post.php:4570
+[25-Nov-2021 15:22:36 UTC] PHP   5. do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\post.php:4468
+[25-Nov-2021 15:22:36 UTC] PHP   6. WP_Hook->do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\plugin.php:470
+[25-Nov-2021 15:22:36 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:327
+[25-Nov-2021 15:22:36 UTC] PHP   8. hkst_thongtin_save() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:305
+[25-Nov-2021 15:23:24 UTC] PHP Notice:  Undefined index: show_on_main_slider in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\plugins\hkst-metabox.php on line 26
+[25-Nov-2021 15:23:24 UTC] PHP Stack trace:
+[25-Nov-2021 15:23:24 UTC] PHP   1. {main}() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:0
+[25-Nov-2021 15:23:24 UTC] PHP   2. get_default_post_to_edit() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:66
+[25-Nov-2021 15:23:24 UTC] PHP   3. wp_insert_post() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\includes\post.php:694
+[25-Nov-2021 15:23:24 UTC] PHP   4. do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\post.php:4468
+[25-Nov-2021 15:23:24 UTC] PHP   5. WP_Hook->do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\plugin.php:470
+[25-Nov-2021 15:23:24 UTC] PHP   6. WP_Hook->apply_filters() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:327
+[25-Nov-2021 15:23:24 UTC] PHP   7. hkst_thongtin_save() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:305
+[25-Nov-2021 15:27:07 UTC] PHP Notice:  Undefined index: post_nonce in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\plugins\hkst-metabox.php on line 26
+[25-Nov-2021 15:27:07 UTC] PHP Stack trace:
+[25-Nov-2021 15:27:07 UTC] PHP   1. {main}() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:0
+[25-Nov-2021 15:27:07 UTC] PHP   2. get_default_post_to_edit() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:66
+[25-Nov-2021 15:27:07 UTC] PHP   3. wp_insert_post() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\includes\post.php:694
+[25-Nov-2021 15:27:07 UTC] PHP   4. do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\post.php:4468
+[25-Nov-2021 15:27:07 UTC] PHP   5. WP_Hook->do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\plugin.php:470
+[25-Nov-2021 15:27:07 UTC] PHP   6. WP_Hook->apply_filters() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:327
+[25-Nov-2021 15:27:07 UTC] PHP   7. hkst_thongtin_save() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:305
+[25-Nov-2021 15:30:54 UTC] PHP Notice:  Undefined index: post_nonce in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\plugins\hkst-metabox.php on line 26
+[25-Nov-2021 15:30:54 UTC] PHP Stack trace:
+[25-Nov-2021 15:30:54 UTC] PHP   1. {main}() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:0
+[25-Nov-2021 15:30:54 UTC] PHP   2. get_default_post_to_edit() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:66
+[25-Nov-2021 15:30:54 UTC] PHP   3. wp_insert_post() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\includes\post.php:694
+[25-Nov-2021 15:30:54 UTC] PHP   4. do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\post.php:4468
+[25-Nov-2021 15:30:54 UTC] PHP   5. WP_Hook->do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\plugin.php:470
+[25-Nov-2021 15:30:54 UTC] PHP   6. WP_Hook->apply_filters() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:327
+[25-Nov-2021 15:30:54 UTC] PHP   7. hkst_thongtin_save() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:305
+[25-Nov-2021 15:31:17 UTC] PHP Notice:  Undefined index: post_nonce in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\plugins\hkst-metabox.php on line 26
+[25-Nov-2021 15:31:17 UTC] PHP Stack trace:
+[25-Nov-2021 15:31:17 UTC] PHP   1. {main}() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:0
+[25-Nov-2021 15:31:17 UTC] PHP   2. get_default_post_to_edit() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:66
+[25-Nov-2021 15:31:17 UTC] PHP   3. wp_insert_post() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\includes\post.php:694
+[25-Nov-2021 15:31:17 UTC] PHP   4. do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\post.php:4468
+[25-Nov-2021 15:31:17 UTC] PHP   5. WP_Hook->do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\plugin.php:470
+[25-Nov-2021 15:31:17 UTC] PHP   6. WP_Hook->apply_filters() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:327
+[25-Nov-2021 15:31:17 UTC] PHP   7. hkst_thongtin_save() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:305
+[25-Nov-2021 15:32:33 UTC] PHP Notice:  Undefined index: post_nonce in C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-content\plugins\hkst-metabox.php on line 26
+[25-Nov-2021 15:32:33 UTC] PHP Stack trace:
+[25-Nov-2021 15:32:33 UTC] PHP   1. {main}() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:0
+[25-Nov-2021 15:32:33 UTC] PHP   2. get_default_post_to_edit() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\post-new.php:66
+[25-Nov-2021 15:32:33 UTC] PHP   3. wp_insert_post() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-admin\includes\post.php:694
+[25-Nov-2021 15:32:33 UTC] PHP   4. do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\post.php:4468
+[25-Nov-2021 15:32:33 UTC] PHP   5. WP_Hook->do_action() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\plugin.php:470
+[25-Nov-2021 15:32:33 UTC] PHP   6. WP_Hook->apply_filters() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:327
+[25-Nov-2021 15:32:33 UTC] PHP   7. hkst_thongtin_save() C:\Users\ducva\Local Sites\huyenkhongsonthuong\app\public\wp-includes\class-wp-hook.php:305
